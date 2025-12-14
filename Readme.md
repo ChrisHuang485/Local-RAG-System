@@ -15,10 +15,10 @@ System based on **Ollama (LLM)** and **HuggingFace (Embedding/Rerank)**, support
 
 ## Features
 
-* ** Modular architecture, easy to expand and maintain.
-* ** Automatically mask sensitive information such as phone numbers and email addresses.
-* ** Hybrid Search. Significantly increase recall rates.
-* ** Support '.pdf', '.docx', '.pptx', '.txt'.
+* Modular architecture, easy to expand and maintain.
+* Automatically mask sensitive information such as phone numbers and email addresses.
+* Hybrid Search. Significantly increase recall rates.
+* Support '.pdf', '.docx', '.pptx', '.txt'.
 
 ## Directory Structure
 
@@ -38,15 +38,16 @@ project_root/
 
 ## Prerequisites
 
-Step 1: Install and configure Ollama
-    This project relies on Ollama to run LLM locally.    
-    1. **Download and install [Ollama](https://ollama.com).
-    2. **Open your terminal/command prompt.
-    3. **Pull the specific model used in config.py (default is Qwen 3 14B):
+1. Install and configure Ollama
+This project relies on Ollama to run LLM locally.
+   
+    1. Download and install [Ollama](https://ollama.com).
+    2. Open your terminal/command prompt.
+    3. Pull the specific model used in config.py (default is Qwen 3 14B):
         ollama pull qwen3:14b
         (Note: You can change the model name in config.py if your hardware requires a smaller model like qwen2.5:7b)
 
-2. Install Python Dependencies:
+3. Install Python Dependencies:
    ```
     pip install -r requirements.txt
    ```
