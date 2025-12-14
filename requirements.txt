@@ -1,0 +1,17 @@
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-huggingface
+langchain-ollama
+
+chromadb
+rank_bm25
+sentence-transformers
+
+huggingface-hub
+
+pypdf
+docx2txt
+python-pptx
+unstructured
