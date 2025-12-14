@@ -33,7 +33,8 @@ project_root/
     ├── utils.py          
     ├── cleaner.py        
     ├── loader.py         
-    └── engine.py         
+    └── engine.py
+```       
 
 ## Prerequisites
 
