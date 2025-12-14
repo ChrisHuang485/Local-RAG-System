@@ -9,7 +9,7 @@
 
 ## Overview
 
-This project is a**fully localized, privacy-focused RAG system**. It employs a layered architecture design to address pain points in enterprise knowledge base retrieval: data privacy leaks, low search accuracy, and difficulties in parsing diverse formats.
+This project is a **fully localized, privacy-focused RAG system**. It employs a layered architecture design to address pain points in enterprise knowledge base retrieval: data privacy leaks, low search accuracy, and difficulties in parsing diverse formats.
 
 System based on **Ollama (LLM)** and **HuggingFace (Embedding/Rerank)**, supports fully offline operation after deployment.
 
@@ -39,8 +39,9 @@ project_root/
 ## Prerequisites
 
 Step 1: Install and configure Ollama
-    This project relies on Ollama to run LLM locally.
-    1. ** Download and install [Ollama](https://ollama.com) from ollama.com.
+
+    This project relies on Ollama to run LLM locally.    
+    1. ** Download and install [Ollama](https://ollama.com).
     2. ** Open your terminal/command prompt.
     3. ** Pull the specific model used in config.py (default is Qwen 3 14B):
         ollama pull qwen3:14b
