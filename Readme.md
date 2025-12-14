@@ -9,7 +9,7 @@
 
 ## Overview
 
-This project is a**fully localized, privacy-focused RAG system**. It employs a layered architecture designto address pain points in enterprise knowledge base retrieval: data privacy leaks, low search accuracy, and difficulties in parsing diverse formats.
+This project is a**fully localized, privacy-focused RAG system**. It employs a layered architecture design to address pain points in enterprise knowledge base retrieval: data privacy leaks, low search accuracy, and difficulties in parsing diverse formats.
 
 System based on **Ollama (LLM)** and **HuggingFace (Embedding/Rerank)**, supports fully offline operation after deployment.
 
@@ -17,8 +17,8 @@ System based on **Ollama (LLM)** and **HuggingFace (Embedding/Rerank)**, support
 
 * ** Modular architecture, easy to expand and maintain.
 * ** Automatically mask sensitive information such as phone numbers and email addresses.
-* ** Hybrid Search，Significantly increase recall rates.
-* ** Support '.pdf', '.docx', '.pptx', '.txt'
+* ** Hybrid Search. Significantly increase recall rates.
+* ** Support '.pdf', '.docx', '.pptx', '.txt'.
 
 ## Directory Structure
 
@@ -47,20 +47,24 @@ Step 1: Install and configure Ollama
         (Note: You can change the model name in config.py if your hardware requires a smaller model like qwen2.5:7b)
 
 2. Install Python Dependencies:
+   ```
     pip install -r requirements.txt
+   ```
 
-3. Download Embedding Models: Run this script once to cache the BGE-M3 and Re-ranker models locally
+4. Download Embedding Models: Run this script once to cache the BGE-M3 and Re-ranker models locally
     python download_models.py
 
 ## Usage
 1. Run the main application:
+   ```
     python main.py
+   ```
 
-2. Input the path to your knowledge base (folder or file). Press Enter to use the default path 'my_knowledge_base'.
+3. Input the path to your knowledge base (folder or file). Press Enter to use the default path 'my_knowledge_base'.
 
-3. Input any specific instructions for the model (optional). Press Enter to skip.
+4. Input any specific instructions for the model (optional). Press Enter to skip.
 
-4. Ask questions based on your knowledge base. Type 'exit', 'quit', or 'q' to terminate the program.
+5. Ask questions based on your knowledge base. Type 'exit', 'quit', or 'q' to terminate the program.
 
 ## Configuration
 You can modify settings in `config.py` to customize model choices, chunk sizes, and other parameters.
